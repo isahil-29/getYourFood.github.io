@@ -1,0 +1,247 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html{
+  scroll-behavior: smooth;
+}
+#navbar {
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0px;
+}
+#navbar::before {
+  content: "";
+  background-color: black;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.4;
+}
+#logo {
+  margin: 10px 34px;
+}
+#logo img {
+  width: 46px;
+  margin: 1px 1px;
+}
+#navbar ul {
+  display: flex;
+  font-family: "Baloo Paaji 2", cursive;
+}
+#navbar ul li {
+  list-style: none;
+  font-size: 1.3rem;
+}
+#navbar ul li a {
+  color: azure;
+  display: block;
+  padding: 6px 22px;
+  text-decoration: none;
+  border-radius: 20px;
+}
+#navbar ul li a:hover {
+  color: black;
+  background-color: white;
+}
+/* Home sectionm */
+#home {
+  display: flex;
+  flex-direction: column;
+  
+  top: 0%;
+  left: 0%;
+  padding: 3px 200px;
+  height: 550px;
+  justify-content: center;
+  align-items: center;
+}
+#home::before {
+  content: "";
+  background: url(../bg1.jpg) no-repeat center center/cover;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.89;
+}
+#home h1 {
+  font-family: "Bree Serif", serif;
+  color: whitesmoke;
+  text-align: center;
+}
+#home p {
+  font-family: "Bree Serif", serif;
+  color: whitesmoke;
+  text-align: center;
+  font-size: 1.1rem;
+}
+.primary {
+  font-family: "Bree Serif", serif;
+  font-size: 2.8rem;
+  padding: 12px;
+}
+.btn {
+  font-family: "Bree Serif", serif;  
+  background-color: rgb(226, 83, 83); /* Green */
+  border-radius: 10px;
+  color: white;
+  padding: 6px 6px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.btn {
+  background-color: rgb(243, 189, 189);
+  color: black;
+  border: 2px solid #f44336;
+}
+
+.btn:hover {
+  background-color: #f44336;
+  color: white;
+}
+
+/* Services section */
+.h-primary{
+  font-family: "Bree Serif", serif;
+  font-size: 2.8rem;
+  padding: 12px;
+
+}
+.h-secondary{
+  font-family: "Bree Serif", serif;
+  font-size: 1.8rem;
+  padding: 12px;
+
+}
+#services{
+  margin-top: 34px;
+  display: flex;
+
+}
+#services .box{
+  border: 2px solid brown;
+  padding: 34px;
+  margin: 3px 6px;
+  border-radius: 23px;
+  background: rgb(240, 239, 239);
+}
+#services .box img{
+  height: 200px;
+  margin: auto;
+  display: block;
+}
+#services .box p{
+  font-family: "Bree Serif", serif; 
+}
+#cleint-section{
+  padding-top: 34px;
+  
+}
+#cleint-section::before{
+  content: "";
+  position: absolute;
+  background: url('../bg.jpg');
+  
+  width: 100%;
+  height: 54%;
+  z-index: -1;
+  opacity: 0.4;
+}
+#clients{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#clients img{
+  height: 150px;
+}
+.client-items{
+  padding: 30px;
+
+}
+#contact{
+  padding-top: 34px;
+  position: relative;
+}
+#contact::before{
+  content: "";
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.5;
+  background: url('../cont.jpg') no-repeat center center/cover;
+}
+#contact-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 34px;
+}
+#contact-box input,
+#contact-box textarea{
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 9px;
+  font-size: 0.8rem;
+}
+#contact-box form{
+  width: 40%;
+}
+#contact-box label{
+  font-size: 1rem;
+  font-family: "Bree Serif", serif; 
+
+}
+form .btn {
+  font-family: "Bree Serif", serif; 
+  align-items: center; 
+  background-color: rgb(124, 245, 253); /* Green */
+  border-radius: 10px;
+  color: white;
+  padding: 6px 6px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+form .btn {
+  background-color: rgb(174, 241, 253);
+  color: black;
+  border: 2px solid #00ffea;
+}
+
+form .btn:hover {
+  background-color: #00bceb3d;
+  color: white;
+}
+
+footer{
+  background: black;
+  color: blanchedalmond;
+  padding: 9px 20px;
+}
+
+
+
+
+.center{
+  text-align: center;
+}
